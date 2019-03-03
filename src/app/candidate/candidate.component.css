@@ -1,0 +1,22 @@
+div {
+    box-sizing:border-box;
+    width:calc(100% - 16px);
+    padding:4px;
+    margin: 4px 8px;
+    background-color:#263238;
+    border-radius:8px;
+    color:white;
+}
+
+div.both {
+    background-color:none;
+    background:linear-gradient(90deg, #e53935, #ffb300);
+}
+div.mini {
+    background-color:none;
+    background:linear-gradient(90deg, #e53935, #263238);
+}
+div.city {
+    background-color:none;
+    background:linear-gradient(90deg, #263238, #ffb300);
+}

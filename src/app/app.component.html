@@ -1,0 +1,6 @@
+<div class="pages-flex-container" [attr.tab]="tab" (dialog)="openDialog($event)">
+  <app-city [class.blur]="dialogOpen"></app-city>
+  <app-mini [class.blur]="dialogOpen"></app-mini>
+</div>
+<app-dialogue *ngIf="dialogOpen" [candidate]="dialogInfo" (close)="closeDialog()"></app-dialogue>
+<app-bottom-bar [class.blur]="dialogOpen" (settab)="setTab($event)"></app-bottom-bar>

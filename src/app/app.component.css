@@ -1,0 +1,39 @@
+:host {
+    color:white;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+}
+* {
+    transition:filter 0.4s;
+}
+.page {
+    top:0px;
+    left:0px;
+    width:100%;
+    overflow-x:hidden;
+}
+.blur {
+    filter:blur(16px);
+}
+.pages-flex-container {
+    position:absolute;
+    width:100%;
+    left:0px;
+    display:flex;
+    transition:width 0.4s cubic-bezier(1,0,0,1), transform 0.4s cubic-bezier(1,0,0,1);
+}
+.pages-flex-container[tab=full] {
+    width:100%;
+    transform:translate(0%);
+}
+.pages-flex-container[tab=city] {
+    width:200%;
+    transform:translate(0%);
+}
+.pages-flex-container[tab=mini] {
+    width:200%;
+    transform:translate(-50%);
+}

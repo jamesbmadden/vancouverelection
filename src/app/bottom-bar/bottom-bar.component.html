@@ -1,0 +1,12 @@
+<p [attr.selected]="tab == 'full'" (click)="setTab('full')">
+  <i class="material-icons">view_column</i>
+  <span>All</span>
+</p>
+<p [attr.selected]="tab == 'city'" (click)="setTab('city')">
+  <i class="material-icons">location_city</i>
+  <span>City</span>
+</p>
+<p [attr.selected]="tab == 'mini'" (click)="setTab('mini')">
+  <i class="material-icons">school</i>
+  <span>Mini</span>
+</p>

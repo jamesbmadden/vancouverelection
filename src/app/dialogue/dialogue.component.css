@@ -1,0 +1,37 @@
+:host {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.dialogue {
+  box-sizing:border-box;
+  position:relative;
+  width:calc(100% - 16px);
+  max-width:512px;
+  background:#263238;
+  border-radius:16px;
+  padding:8px;
+}
+.dialogue.Green {
+    background:linear-gradient(90deg, #43a047, #263238);
+}
+.dialogue.NPA {
+    background:linear-gradient(90deg, #5e35b1, #263238);
+}
+.dialogue.Vision {
+    background:linear-gradient(90deg, #7cb342, #263238);
+}
+.dialogue.Independant {
+    background:linear-gradient(90deg, #212121, #263238);
+}
+.dialogue.COPE {
+    background:linear-gradient(90deg, #e53935, #263238);
+}
+.dialogue.OneCity {
+    background:linear-gradient(90deg, #00897b, #263238);
+}
